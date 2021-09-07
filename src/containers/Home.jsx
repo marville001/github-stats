@@ -1,10 +1,10 @@
 import React from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Form, Row, Button } from "react-bootstrap";
 
 const Home = () => {
   const colors = ["primary", "success", "secondary", "warning"];
   const info = ["Users", "Repositories", "Commits", "warning"];
-  
+
   return (
     <Container className="my-3">
       <Row className="justify-content-md-center">
@@ -18,6 +18,27 @@ const Home = () => {
             </Card>
           </Col>
         ))}
+      </Row>
+      <Row className="mt-5">
+        <Col md={4}>
+          <Form>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Username</Form.Label>
+              <Form.Control />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Repository</Form.Label>
+              <Form.Control />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Search Details
+            </Button>
+          </Form>
+        </Col>
+        <Col sm={6} >
+            <Card className="p-2 w-100" bg="secondary"><h4>Details heer</h4></Card>
+        </Col>
       </Row>
     </Container>
   );
