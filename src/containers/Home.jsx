@@ -3,7 +3,7 @@ import { Card, Col, Container, Form, Row, Button } from "react-bootstrap";
 
 const Home = () => {
   const colors = ["primary", "success", "secondary", "warning"];
-  const info = ["Users", "Repositories", "Commits", "warning"];
+  const info = ["Users", "Repositories", "Commits", "Contributors"];
 
   return (
     <Container className="my-3">
